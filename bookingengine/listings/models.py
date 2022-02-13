@@ -68,7 +68,7 @@ class BookingInfo(models.Model):
     )
     price = models.DecimalField(max_digits=6, decimal_places=2)
     # booked =models.BooleanField(default = False,null=False)
-
+    
     def __str__(self):
         if self.listing:
             obj = self.listing
